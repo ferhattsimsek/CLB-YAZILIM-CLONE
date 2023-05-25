@@ -1,0 +1,459 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav,section {
+	display: block;
+}
+
+
+body,html {
+	line-height: 1;
+    background-color:#010415;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+header{
+    display:flex;
+    padding: 2rem 5%;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 5%;
+    position: sticky;
+    top:0;
+    z-index:100 ;
+}
+header .logo i{
+    font-size: 2.8rem;
+    color:white;
+}
+header .navbar a{
+    font-size:1.2rem;
+    
+    padding:0.5rem 0.8rem;
+    margin-right: 0.1rem;
+    color:white;
+    transition:0.1s;
+    border-radius: 1.5rem;
+
+}
+header .navbar a:hover{
+    color:#999;
+    background-color: white;
+
+}
+.btn a{
+    font-size:1.2rem;
+    color:#003166;
+    background-color:#e6f2ff;
+    display: inline-block;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 0.7rem 1.5rem;
+    transition: 0.17s;
+}
+.btn a:hover{
+    scale: 1.05;
+}
+section{
+    padding:0 18%;
+}
+.home{
+    background: url(https://clbyazilim.com/images/banner-bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top:-7.1rem; ;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+
+}
+.home .content{
+    max-width: 42rem;
+    color:white;
+}
+.home .content h1{
+    font-size:3rem;
+    padding:1.5rem 0;
+    margin-bottom:1.3rem;
+}
+.home .content p{
+    line-height: 1.75;
+    font-size:1.125rem;
+    margin-bottom:1rem;
+}
+.home .content i,
+.home .content a{
+    font-size:1.2rem;
+    color:white;
+
+}
+.home .content a{
+    text-decoration: underline;
+    margin-left:0.5rem;
+    padding: 0.1rem;
+    line-height: 1.5;
+}
+section .aboutus{
+    color:white;
+background-color: #09101c;
+    padding:2rem 2rem ;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom:10rem;
+}
+section h1{
+font-size:3rem;
+margin-bottom:2rem;
+color:white;
+}
+.aboutus p{
+    font-size:1.1rem;
+    line-height: 1.9rem;
+}
+.services .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color:white;
+    gap:1.5rem;
+    margin-bottom:10rem;
+    
+}
+.services .container i{
+    font-size: 4rem;
+    color:white;
+    margin-bottom:1.8rem;
+}
+.services .container .title{
+    font-size:1.5rem;
+    text-align: center;
+    line-height: 1.5;
+}
+.services .container .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #09101c;
+    padding:2rem;
+    border-radius: 1.4rem;;
+    
+}
+.services h1{
+    font-size: 2.9rem;
+    margin-bottom:4rem;
+    font-weight: bold;;
+}
+.hizmetler h1{
+    font-size: 2.9rem;
+    margin-bottom:4rem;
+    font-weight: bold;;
+
+}
+
+.hizmetler .container{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    color:white;
+    gap:1.5rem;
+    margin-bottom:10rem;
+
+}
+.hizmetler .container .item{
+    display: flex;
+    flex-direction: center;;
+    gap:2rem;
+    background-color: #09101c;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+.hizmetler .container .item .icon i{
+    font-size: 3.5rem;;
+}
+.hizmetler .container .item h2{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom:1rem;
+}
+.hizmetler .container .item ul{
+    list-style-type:disc
+}
+.hizmetler .container .item ul li{
+    font-size:1rem;
+    margin-bottom:0.6rem;
+}
+.hizmetler .container .item p{
+    font-size:1rem;
+    line-height: 1.5;
+}
+.partners .container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    color:white;
+    gap:1rem;
+    margin-bottom:10rem;
+    
+    
+}
+.partners h1{
+    font-size: 2.9rem;
+    margin-bottom:4rem;
+    font-weight: bold;;
+}
+.partners .container .card{
+    padding:3rem 1.5rem;
+    background-color: #09101c;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.partners .container .card .icon img{
+width: 100%;
+object-fit: contain;
+height: 64px;
+margin-bottom: 1rem;;
+
+
+}
+.partners .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partners h3{
+    font-size: 1.07rem;
+    line-height: 1.2;
+    text-align: center;
+
+}
+.app h1{
+    font-size: 2.9rem;
+    margin-bottom:4rem;
+    font-weight: bold;;
+    margin-top:5rem;
+}
+.app img{
+    width: 100%;
+    margin-bottom:5rem;
+    border-radius: 1.2rem;;
+}
+.refference h1{
+    font-size: 2.9rem;
+    margin-bottom:4rem;
+    font-weight: bold;;
+}
+.refference .container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap:3rem;
+    margin-bottom:10rem;
+}
+.refference .container img{
+    width: 100%;
+margin-left:1.5rem;
+    
+}
+.contact-us h1{
+    font-size: 2.9rem;
+    margin-bottom:4rem;
+    font-weight: bold;;
+}
+.contact-us .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    color:white;
+    gap:1.5rem;
+    margin-bottom:10rem;
+}
+.contact-us .container .ankara{
+   grid-area: 2/1/3/2;
+   padding:2rem;
+   background-color: #09101c;
+   border-radius: 0.8rem;
+   
+}
+.contact-us .container .sakarya{
+    grid-area:1/1/2/2;
+    padding:2rem;
+    background-color: #09101c;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+}
+.contact-us i{
+    font-size: 2.1rem;
+    margin-right:1rem;
+}
+.tel{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+}
+.mail{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+
+
+}
+.location{
+    display: flex;
+    align-items: center;
+
+
+}
+.contact-us .container .login-form{
+    grid-area:1/2/3/3 ;
+    padding:2rem;
+    background-color: #09101c;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;;
+    color:whitesmoke;
+
+    
+}
+.contact-us .container h4{
+    font-size:1rem;
+}
+.contact-us .container h3{
+    font-size: 1.4rem;
+    margin-bottom:1.4rem;
+}
+input{
+    font-size: 1.4rem;
+    background-color: #09101c;
+    color:whitesmoke;
+    border-radius: 0.5rem;
+}
+label{
+    margin-top:0.5rem;
+    font-size: 1.1rem;;
+    
+}
+.chkbox{
+    
+    margin-left:1rem;
+    font-size: 25rem,!important;
+
+}
+.tbox{
+    background-color:#171e29 ;
+    padding:0.34rem   ;
+}
+textarea{
+    background-color:#171e29 ;
+    padding:0.34rem   ;
+    height: 7rem;
+    text-align:start;
+    font-size: 1.1rem;
+    color:white;
+    border-radius: 0.5rem;
+}
+.contact-us button{
+    background-color: white;
+    height: 3rem;;
+    font-size:1.2rem;
+    color:#003166;
+    border-radius: 0.8rem;
+    cursor:pointer;
+    margin-top:0.8rem;
+}
+.social-media{
+    padding:2.5rem;
+    background-color: #09101c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.6rem;;
+}
+.social-media i{
+    font-size:2rem;
+    color:white;
+    transition: 0.2s;
+}
+.social-media i:hover{
+    color:#003166;
+}
+.footer{
+    background-color:#171e29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1.1rem;
+    color:white;
+    font-size:1.2rem;
+    line-height: 1.1;
+}
+@media(max-width:768px){
+    *{
+        box-sizing: border-box;
+    }
+    .navbar{
+        display:none;
+    }
+    .services .container{
+        grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+    }
+    .hizmetler .container{
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    }
+    section{
+        padding:0 5%;
+    }
+    .contact-us .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
